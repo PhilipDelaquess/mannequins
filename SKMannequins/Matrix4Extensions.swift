@@ -11,7 +11,7 @@ extension float4x4 {
             float4(matrix.m21, matrix.m22, matrix.m23, matrix.m24),
             float4(matrix.m31, matrix.m32, matrix.m33, matrix.m34),
             float4(matrix.m41, matrix.m42, matrix.m43, matrix.m44)
-            ])
+        ])
     }
 }
 

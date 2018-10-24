@@ -77,22 +77,6 @@ class GameViewController: UIViewController {
         }
     }
 
-    /*
- Some ideas on rotating segments:
-
-     Finger movement determines a delta angle around a vector aimed at the camera.
-     The selfieStick orientation is such a vector.
-     The segment origin projected onto the screen compared to the pan begin location
-     results in a starting angle. That same projection combined with the pan change location
-     results in a current angle. Their delta is the angle around the camera Z axis that I attempt
-     to rotate. I need to transform the camera Z into the segment's local coordinates,
-     apply the rotation, and then clamp the euler angles.
-     A SCNNode has a 'transform' matrix, a 'rotation' 4-vector, an 'orientation' quaternion,
-     and 'eulerAngles'. With any luck, setting one of them should recalculate all the others.
-
-     I could write some unit tests to experiment with this.
- */
-
     func panSegment (_ recognizer: UIPanGestureRecognizer) {
         if let segment = selectedSegment {
             let node = segment.node
@@ -100,18 +84,12 @@ class GameViewController: UIViewController {
                 startingTouches = 1
                 startingEulers = segment.eulerCurrent
 
-                // What is the selfieStick Z axis in the world?
-                //let worldZ = selfieStick.transform * SCNVector3Make(0, 0, 1)
-                //NSLog("%@", "selfie world Z axis is \(worldZ.x) \(worldZ.y) \(worldZ.z)")
-
-                // Where is world origin in node local?
+                // Where are selfie X and Z axes in the segment's local coords?
                 let sOrigin = node.parent!.convertVector(SCNVector3Make(0, 0, 0), from: selfieStick)
                 let sxAxis = node.parent!.convertVector(SCNVector3Make(1, 0, 0), from: selfieStick)
                 let szAxis = node.parent!.convertVector(SCNVector3Make(0, 0, 1), from: selfieStick)
                 startingSelfieX = SCNVector3Make(sxAxis.x - sOrigin.x, sxAxis.y - sOrigin.y, sxAxis.z - sOrigin.z)
                 startingSelfieZ = SCNVector3Make(szAxis.x - sOrigin.x, szAxis.y - sOrigin.y, szAxis.z - sOrigin.z)
-                NSLog("%@", "selfie segment X axis is \(startingSelfieX!.x) \(startingSelfieX!.y) \(startingSelfieX!.z)")
-                NSLog("%@", "selfie segment Z axis is \(startingSelfieZ!.x) \(startingSelfieZ!.y) \(startingSelfieZ!.z)")
 
             } else if recognizer.state == .changed && startingTouches == 1 {
                 let trans = recognizer.translation(in: sceneView)
@@ -125,17 +103,14 @@ class GameViewController: UIViewController {
                 let min = segment.eulerMin
                 let max = segment.eulerMax
 
-                // when selfie X is 1 0 0, x rot is all deltaY, z rot is all deltaX
-                // when selfie X is 0 0 -1
-
                 // figure facing me, (1 0 0) (0 0 1)
-                // dv -> xrot, dh -> zrot or xrot = sx.x times dv +/- sx.z or sz.x times dh
+                // dv -> xrot, dh -> zrot
                 // figure facing left, (0 0 -1) (1 0 0)
-                // dv -> -zrot, dh -> xrot, xrot = sx.x times dv + sz.x times dh
+                // dv -> -zrot, dh -> xrot
                 // figure facing away, (-1 0 0) (0 0 -1)
-                // dv -> -xrot, dh -> -zrot or xrot = sx.x times dv + sz.x times dh
+                // dv -> -xrot, dh -> -zrot
                 // figure facing right, (0 0 1) (-1 0 0)
-                // dv -> zrot, dh -> -xrot or xrot = sx.x times dv _ sz.x times dh
+                // dv -> zrot, dh -> -xrot
 
                 let curr = startingEulers!
                 let xNew = Float.minimum(Float.maximum(curr.x + dx, min.x), max.x)
@@ -155,7 +130,6 @@ class GameViewController: UIViewController {
             if let node = result?.node {
                 hitNodeName = node.name
                 selectedSegment = armature.find(byName: hitNodeName)
-                //
             }
         } else {
             selectedSegment = nil
