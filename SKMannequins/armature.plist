@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Name</key>
+	<string>Torso</string>
+	<key>ObjFile</key>
+	<string>torso</string>
+	<key>Location</key>
+	<string>0 2 0</string>
+	<key>RotX</key>
+	<string>-90 0 90</string>
+	<key>RotY</key>
+	<string>-180 0 180</string>
+	<key>RotZ</key>
+	<string>-180 0 180</string>
+	<key>Children</key>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>Pelvis</string>
+			<key>ObjFile</key>
+			<string>pelvis</string>
+			<key>Location</key>
+			<string>0 0 0</string>
+			<key>RotX</key>
+			<string>-90 0 45</string>
+			<key>RotY</key>
+			<string>-60 0 60</string>
+			<key>RotZ</key>
+			<string>-45 0 45</string>
+			<key>Children</key>
+			<array>
+				<dict>
+					<key>Name</key>
+					<string>R Up Leg</string>
+					<key>ObjFile</key>
+					<string>thigh</string>
+					<key>Location</key>
+					<string>-0.5 -2 0.1</string>
+					<key>RotX</key>
+					<string>-120 0 45</string>
+					<key>RotY</key>
+					<string>-45 0 45</string>
+					<key>RotZ</key>
+					<string>-45 0 10</string>
+					<key>Children</key>
+					<array>
+						<dict>
+							<key>Name</key>
+							<string>R Low Leg</string>
+							<key>ObjFile</key>
+							<string>shin</string>
+							<key>Location</key>
+							<string>0 -2.6 0</string>
+							<key>RotX</key>
+							<string>0 0 120</string>
+							<key>Children</key>
+							<array>
+								<dict>
+									<key>Name</key>
+									<string>R Foot</string>
+									<key>ObjFile</key>
+									<string>foot</string>
+									<key>Location</key>
+									<string>0 -2.8 0</string>
+									<key>RotX</key>
+									<string>-30 0 80</string>
+								</dict>
+							</array>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>L Up Leg</string>
+					<key>ObjFile</key>
+					<string>thigh</string>
+					<key>Location</key>
+					<string>0.5 -2 0.1</string>
+					<key>RotX</key>
+					<string>-120 0 45</string>
+					<key>RotY</key>
+					<string>-45 0 45</string>
+					<key>RotZ</key>
+					<string>-10 0 45</string>
+					<key>Children</key>
+					<array>
+						<dict>
+							<key>Name</key>
+							<string>L Low Leg</string>
+							<key>ObjFile</key>
+							<string>shin</string>
+							<key>Location</key>
+							<string>0 -2.6 0</string>
+							<key>RotX</key>
+							<string>0 0 120</string>
+							<key>Children</key>
+							<array>
+								<dict>
+									<key>Name</key>
+									<string>L Foot</string>
+									<key>ObjFile</key>
+									<string>foot</string>
+									<key>Location</key>
+									<string>0 -2.8 0</string>
+									<key>RotX</key>
+									<string>-30 0 80</string>
+								</dict>
+							</array>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Head</string>
+			<key>ObjFile</key>
+			<string>head</string>
+			<key>Location</key>
+			<string>0 2.1 0.0</string>
+			<key>RotX</key>
+			<string>-45 0 90</string>
+			<key>RotY</key>
+			<string>-100 0 100</string>
+			<key>RotZ</key>
+			<string>-45 0 45</string>
+			<key>RevZ</key>
+			<string>yes</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>R Up Arm</string>
+			<key>ObjFile</key>
+			<string>uparm</string>
+			<key>Location</key>
+			<string>-1 1.4 0.1</string>
+			<key>RotX</key>
+			<string>-180 0 90</string>
+			<key>RotY</key>
+			<string>-45 0 90</string>
+			<key>RotZ</key>
+			<string>-90 -20 30</string>
+			<key>Children</key>
+			<array>
+				<dict>
+					<key>Name</key>
+					<string>R Low Arm</string>
+					<key>ObjFile</key>
+					<string>lowarm</string>
+					<key>Location</key>
+					<string>0 -1.8 0</string>
+					<key>RotX</key>
+					<string>-150 0 0</string>
+					<key>RotY</key>
+					<string>0 0 180</string>
+					<key>Children</key>
+					<array>
+						<dict>
+							<key>Name</key>
+							<string>R Hand</string>
+							<key>ObjFile</key>
+							<string>hand</string>
+							<key>Location</key>
+							<string>0 -1.8 0</string>
+							<key>RotX</key>
+							<string>-90 0 90</string>
+							<key>RotZ</key>
+							<string>-30 0 30</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>L Up Arm</string>
+			<key>ObjFile</key>
+			<string>uparm</string>
+			<key>Location</key>
+			<string>1.0 1.4 0.1</string>
+			<key>RotX</key>
+			<string>-180 0 90</string>
+			<key>RotY</key>
+			<string>-90 0 45</string>
+			<key>RotZ</key>
+			<string>-30 20 90</string>
+			<key>Children</key>
+			<array>
+				<dict>
+					<key>Name</key>
+					<string>L Low Arm</string>
+					<key>ObjFile</key>
+					<string>lowarm</string>
+					<key>Location</key>
+					<string>0 -1.8 0</string>
+					<key>RotX</key>
+					<string>-150 0 0</string>
+					<key>RotY</key>
+					<string>-180 0 0</string>
+					<key>Children</key>
+					<array>
+						<dict>
+							<key>Name</key>
+							<string>L Hand</string>
+							<key>ObjFile</key>
+							<string>hand</string>
+							<key>Location</key>
+							<string>0 -1.8 0</string>
+							<key>RotX</key>
+							<string>-90 0 90</string>
+							<key>RotZ</key>
+							<string>-30 0 30</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

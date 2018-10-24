@@ -8,22 +8,46 @@
 
 /* Begin PBXBuildFile section */
 		D44D1068217050000053660F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D1067217050000053660F /* AppDelegate.swift */; };
-		D44D106A217050000053660F /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = D44D1069217050000053660F /* art.scnassets */; };
 		D44D106C217050000053660F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D106B217050000053660F /* GameViewController.swift */; };
 		D44D106F217050000053660F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D44D106D217050000053660F /* Main.storyboard */; };
 		D44D1071217050000053660F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D44D1070217050000053660F /* Assets.xcassets */; };
 		D44D1074217050000053660F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D44D1072217050000053660F /* LaunchScreen.storyboard */; };
+		D44D108421705EBE0053660F /* armature.plist in Resources */ = {isa = PBXBuildFile; fileRef = D44D108321705EBE0053660F /* armature.plist */; };
+		D44D10A12170700E0053660F /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D10A02170700E0053660F /* Segment.swift */; };
+		D44D10BE217255520053660F /* lowarm.obj in Resources */ = {isa = PBXBuildFile; fileRef = D44D10B4217255500053660F /* lowarm.obj */; };
+		D44D10BF217255520053660F /* hand.obj in Resources */ = {isa = PBXBuildFile; fileRef = D44D10B5217255510053660F /* hand.obj */; };
+		D44D10C0217255520053660F /* uparm.obj in Resources */ = {isa = PBXBuildFile; fileRef = D44D10B6217255510053660F /* uparm.obj */; };
+		D44D10C1217255520053660F /* foot.obj in Resources */ = {isa = PBXBuildFile; fileRef = D44D10B7217255510053660F /* foot.obj */; };
+		D44D10C2217255520053660F /* shin.obj in Resources */ = {isa = PBXBuildFile; fileRef = D44D10B8217255510053660F /* shin.obj */; };
+		D44D10C4217255520053660F /* head.obj in Resources */ = {isa = PBXBuildFile; fileRef = D44D10BA217255510053660F /* head.obj */; };
+		D44D10C5217255520053660F /* thigh.obj in Resources */ = {isa = PBXBuildFile; fileRef = D44D10BB217255510053660F /* thigh.obj */; };
+		D44D10C6217255520053660F /* pelvis.obj in Resources */ = {isa = PBXBuildFile; fileRef = D44D10BC217255510053660F /* pelvis.obj */; };
+		D44D10C7217255520053660F /* torso.obj in Resources */ = {isa = PBXBuildFile; fileRef = D44D10BD217255510053660F /* torso.obj */; };
+		D44D10C9217259770053660F /* mannequin.scn in Resources */ = {isa = PBXBuildFile; fileRef = D44D10C8217259770053660F /* mannequin.scn */; };
+		D44D10EB217BBC670053660F /* Matrix4Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D10EA217BBC670053660F /* Matrix4Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D44D1064217050000053660F /* SKMannequins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKMannequins.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D44D1067217050000053660F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D44D1069217050000053660F /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		D44D106B217050000053660F /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		D44D106E217050000053660F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D44D1070217050000053660F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D44D1073217050000053660F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D44D1075217050000053660F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D44D108321705EBE0053660F /* armature.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = armature.plist; sourceTree = "<group>"; };
+		D44D10A02170700E0053660F /* Segment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segment.swift; sourceTree = "<group>"; };
+		D44D10B4217255500053660F /* lowarm.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = lowarm.obj; path = SKMannequins/art.scnassets/lowarm.obj; sourceTree = SOURCE_ROOT; };
+		D44D10B5217255510053660F /* hand.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = hand.obj; path = SKMannequins/art.scnassets/hand.obj; sourceTree = SOURCE_ROOT; };
+		D44D10B6217255510053660F /* uparm.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = uparm.obj; path = SKMannequins/art.scnassets/uparm.obj; sourceTree = SOURCE_ROOT; };
+		D44D10B7217255510053660F /* foot.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = foot.obj; path = SKMannequins/art.scnassets/foot.obj; sourceTree = SOURCE_ROOT; };
+		D44D10B8217255510053660F /* shin.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = shin.obj; path = SKMannequins/art.scnassets/shin.obj; sourceTree = SOURCE_ROOT; };
+		D44D10BA217255510053660F /* head.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = head.obj; path = SKMannequins/art.scnassets/head.obj; sourceTree = SOURCE_ROOT; };
+		D44D10BB217255510053660F /* thigh.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = thigh.obj; path = SKMannequins/art.scnassets/thigh.obj; sourceTree = SOURCE_ROOT; };
+		D44D10BC217255510053660F /* pelvis.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = pelvis.obj; path = SKMannequins/art.scnassets/pelvis.obj; sourceTree = SOURCE_ROOT; };
+		D44D10BD217255510053660F /* torso.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = torso.obj; path = SKMannequins/art.scnassets/torso.obj; sourceTree = SOURCE_ROOT; };
+		D44D10C8217259770053660F /* mannequin.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = mannequin.scn; path = art.scnassets/mannequin.scn; sourceTree = "<group>"; };
+		D44D10EA217BBC670053660F /* Matrix4Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix4Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,16 +80,37 @@
 		D44D1066217050000053660F /* SKMannequins */ = {
 			isa = PBXGroup;
 			children = (
+				D44D108721705FB90053660F /* art.scnassets */,
 				D44D1067217050000053660F /* AppDelegate.swift */,
-				D44D1069217050000053660F /* art.scnassets */,
+				D44D10A02170700E0053660F /* Segment.swift */,
 				D44D106B217050000053660F /* GameViewController.swift */,
+				D44D10EA217BBC670053660F /* Matrix4Extensions.swift */,
 				D44D106D217050000053660F /* Main.storyboard */,
 				D44D1070217050000053660F /* Assets.xcassets */,
 				D44D1072217050000053660F /* LaunchScreen.storyboard */,
+				D44D108321705EBE0053660F /* armature.plist */,
 				D44D1075217050000053660F /* Info.plist */,
 			);
 			path = SKMannequins;
 			sourceTree = "<group>";
+		};
+		D44D108721705FB90053660F /* art.scnassets */ = {
+			isa = PBXGroup;
+			children = (
+				D44D10C8217259770053660F /* mannequin.scn */,
+				D44D10B7217255510053660F /* foot.obj */,
+				D44D10B5217255510053660F /* hand.obj */,
+				D44D10BA217255510053660F /* head.obj */,
+				D44D10B4217255500053660F /* lowarm.obj */,
+				D44D10BC217255510053660F /* pelvis.obj */,
+				D44D10B8217255510053660F /* shin.obj */,
+				D44D10BB217255510053660F /* thigh.obj */,
+				D44D10BD217255510053660F /* torso.obj */,
+				D44D10B6217255510053660F /* uparm.obj */,
+			);
+			name = art.scnassets;
+			path = SKMannequins;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -126,10 +171,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D44D106A217050000053660F /* art.scnassets in Resources */,
+				D44D10C4217255520053660F /* head.obj in Resources */,
+				D44D10C6217255520053660F /* pelvis.obj in Resources */,
 				D44D1074217050000053660F /* LaunchScreen.storyboard in Resources */,
+				D44D10BE217255520053660F /* lowarm.obj in Resources */,
+				D44D10C2217255520053660F /* shin.obj in Resources */,
+				D44D108421705EBE0053660F /* armature.plist in Resources */,
+				D44D10C9217259770053660F /* mannequin.scn in Resources */,
 				D44D1071217050000053660F /* Assets.xcassets in Resources */,
+				D44D10C5217255520053660F /* thigh.obj in Resources */,
+				D44D10C7217255520053660F /* torso.obj in Resources */,
+				D44D10BF217255520053660F /* hand.obj in Resources */,
+				D44D10C1217255520053660F /* foot.obj in Resources */,
 				D44D106F217050000053660F /* Main.storyboard in Resources */,
+				D44D10C0217255520053660F /* uparm.obj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +196,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D44D106C217050000053660F /* GameViewController.swift in Sources */,
+				D44D10A12170700E0053660F /* Segment.swift in Sources */,
 				D44D1068217050000053660F /* AppDelegate.swift in Sources */,
+				D44D10EB217BBC670053660F /* Matrix4Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +338,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6A2RNPMX2T;
 				INFOPLIST_FILE = SKMannequins/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = philip.ios.delaquess.SKMannequins;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -296,6 +354,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6A2RNPMX2T;
 				INFOPLIST_FILE = SKMannequins/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = philip.ios.delaquess.SKMannequins;
 				PRODUCT_NAME = "$(TARGET_NAME)";
